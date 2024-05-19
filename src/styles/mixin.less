@@ -1,0 +1,20 @@
+// 单行省略号显示
+.ellipsis() {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  //多行超出省略号
+  /*
+  *lineNum: 参数，行数
+  */
+  .ellipsisLine(@lineNum : 2) {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lineNum;
+    overflow: hidden;
+  }
+  
